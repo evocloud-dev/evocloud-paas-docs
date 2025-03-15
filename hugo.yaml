@@ -1,0 +1,183 @@
+baseURL: https://evocloud.dev/
+enableInlineShortcodes: true
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: EvoCloud Platform | Built for secure Intranet Cloud.
+  fr:
+    languageName: Français
+    weight: 2
+    title: Platforme EvoCloud | Pour un Intranet Cloud sécurisé.
+
+#https://imfing.github.io/hextra/docs/guide/markdown/#configuration
+markup:
+  _merge: shallow
+
+#Modules inventory section
+module:
+  hugoVersion:
+    extended: true
+    min: 0.143.0
+  imports:
+    - path: github.com/axivo/website/global
+    - path: github.com/imfing/hextra
+
+#Build output
+publishDir: ../public/evocloud-website
+
+# Parse Git commit. Needed to display the last modification date
+enableGitInfo: false
+
+#Parameters section
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      link: /
+      width: 40
+      height: 20
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  editURL:
+    enable: false
+    base: "https://github.com/evocloud-dev/evocloud-paas-docs/edit/main"
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: always
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2025"
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      tokenize: forward
+
+  #enable comments
+  comments:
+    enable: false
+    type: giscus
+
+  
+
+#Menubar section
+menu:
+  main:
+    - name: Documentation
+      identifier: docs
+      pageRef: /docs
+      weight: 1
+    - name: Tutorials
+      identifier: tutorials
+      pageRef: /tutorials
+      weight: 2
+    - name: Community
+      identifier: community
+      pageRef: /community
+      weight: 3
+    - name: Search
+      params:
+        type: search
+      weight: 4
+    - name: GitHub
+      params:
+        icon: github
+      url: https://github.com/evocloud-dev/evocloud-paas
+      weight: 5
+    - name: linkedin
+      params:
+        icon: linkedin
+      url: https://www.linkedin.com/company/evocloud-dev
+      weight: 6
+    - name: X
+      params:
+        icon: x-twitter
+      url: https://www.linkedin.com/company/evocloud-dev
+      weight: 7
+  sidebar:
+    #overview section
+    - identifier: overview
+      name: OVERVIEW
+      params:
+        type: separator
+      weight: 1
+    - identifier: architecture
+      name: "🔰 EvoCloud Architecture"
+      url: "https://github.com"
+      weight: 2
+    - identifier: components
+      name: "🔎 Component Overview"
+      url: "https://github.com"
+      weight: 3
+
+    #getting_started section
+    - identifier: getting_started
+      name: GETTING STARTED
+      params:
+        type: separator
+      weight: 4
+    - identifier: deploy_guide
+      name: "📗 Deployment Guide"
+      url: "https://github.com"
+      weight: 5
+    - identifier: admin_guide
+      name: "📘 Administration Guide"
+      url: "https://github.com"
+      weight: 6
+
+
+    #references section
+    - identifier: references
+      name: REFERENCES
+      params:
+        type: separator
+      weight: 7
+    - identifier: discussions
+      name: "🙋 Discussions ↗"
+      url: "https://github.com/evocloud-dev/evocloud-paas/discussions"
+      weight: 8
+    - identifier: issues
+      name: "🐞 Issues ↗"
+      url: "https://github.com/evocloud-dev/evocloud-paas/issues"
+      weight: 9
+    
+    #community sidemenu section
+    - identifier: community
+      name: COMMUNITY
+      params:
+        type: separator
+      weight: 10
+    - identifier: governance
+      name: "💼 Governance"
+      url: "https://github.com"
+      weight: 11
+    - identifier: meetup
+      name: "📢 Community Channels"
+      url: "https://github.com"
+      weight: 12
+    - identifier: roadmap
+      name: "💡 Roadmap & Vision"
+      url: "https://github.com"
+      weight: 13
+
