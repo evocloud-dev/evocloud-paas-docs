@@ -20,9 +20,23 @@
     function submitedFeedback(feedbackSentisPositive) {
       feedbackSubmitContainer.remove();
       if (feedbackSentisPositive) {
-        result.innerHTML = '{{ .Site.Params.feedback.successMsg | default "Thank you for your nice feedback!" }}';
+        result.innerHTML = '{{ .Site.Params.feedback.successMsg | default "Thank you for your nice feedback! We're glad it was helpful 😌" }}';
       } else {
-        result.innerHTML = '{{ .Site.Params.feedback.successMsg | default "Thank you for helping to improve our documentation! We will make this page better 💀" }}';
+        result.innerHTML = '{{ .Site.Params.feedback.successMsg | default "Thank you for helping us improve our documentation! We will work on making it better 😥" }}';
       }
   }
 </script>
+<!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.corp.evocloud.dev/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
