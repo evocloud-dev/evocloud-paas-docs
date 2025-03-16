@@ -4,7 +4,7 @@ cascade:
 #title: CIS Benchmark
 linkTitle: CIS Benchmark
 breadcrumbs: true
-date: '2025-03-16T11:39:44-04:00'
+date: '2025-03-13T11:39:44-04:00'
 draft: true
 toc: false
 disableSidebar: false
@@ -20,14 +20,16 @@ weight: 2
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  CIS Benchmark 
+  CIS Benchmark
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}
-  Tools and utilities provided in the EvoCloud Platform to help scan your infrastructure for vulnerabilities,
-  perform benchmark testing, and various security tasks to stay on top of your compliance needs and security assessment.
+  CIS Benchmarks are used  for system hardening, configuration assessment, auditing and compliance.
+  The EvoCloud Platform is built on top of Rocky Linux and Talos Linux. By implementing CIS Benchmarks,
+  organizations can significantly improve their cybersecurity and compliance posture while reducing the risk of cyberattacks.
 {{< /hextra/hero-subtitle >}}
 </div>
+
 
