@@ -7,7 +7,7 @@ layout: hextra-home
   image="/images/evocloud-architecture.webp"
   imageLink="https://github.com/evocloud-dev/evocloud-paas"
   imageTitle="EvoCloud Platform"
-  imageWidth="780"
+  imageWidth="680"
 >}}
 
 <!-- markdownlint-disable MD033 MD034-->

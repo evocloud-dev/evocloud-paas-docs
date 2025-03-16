@@ -1,6 +1,7 @@
 # Block all web crawlers full access
 User-agent: *
 Disallow: /
+Sitemap: {{ site.Home.Sitemap.Filename | absURL }}
 
 # Allow Googlebot full access
 #User-agent: Googlebot
