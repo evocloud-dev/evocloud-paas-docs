@@ -1,14 +1,14 @@
 ---
 cascade:
   type: docs #https://imfing.github.io/hextra/docs/guide/organize-files/#layouts
-#title: CIS Benchmark
-linkTitle: CIS Benchmark
+#title: Secrets Management
+linkTitle: Secrets Management
 breadcrumbs: true
-date: '2025-03-13T11:39:44-04:00'
+date: '2025-03-16T11:39:44-04:00'
 draft: true
 toc: false
 disableSidebar: false
-weight: 3
+weight: 2
 ---
 
 <!-- markdownlint-disable MD033 MD034-->
@@ -20,15 +20,15 @@ weight: 3
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  CIS Benchmark
+  Secrets Management
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}
-  CIS Benchmarks are used  for system hardening, configuration assessment, auditing and compliance.
-  The EvoCloud Platform is built on top of Rocky Linux and Talos Linux. By implementing CIS Benchmarks,
-  organizations can significantly improve their cybersecurity and compliance posture while reducing the risk of cyberattacks.
+  One of the biggest challenges with GitOps and Kubernetes manifests is handling secrets. 
+  Since GitOps relies on version-controlled manifests, storing sensitive data like API keys, 
+  database passwords, and authentication tokens securely becomes a problem.
 {{< /hextra/hero-subtitle >}}
 </div>
 
