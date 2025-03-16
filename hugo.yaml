@@ -11,6 +11,14 @@ languages:
     languageName: Français
     weight: 2
     title: Platforme EvoCloud | Pour un Intranet Cloud sécurisé.
+pagination:
+  pagerSize: 21
+
+#Build output
+publishDir: ../public/evocloud-website
+
+# Parse Git commit. Needed to display the last modification date
+enableGitInfo: false
 
 #https://imfing.github.io/hextra/docs/guide/markdown/#configuration
 markup:
@@ -26,6 +34,24 @@ markup:
           inline: [['\(', '\)']]
         enable: true
 
+#outputFormats:
+outputs:
+  home: [HTML, LLMS]
+  page: [HTML, Markdown]
+  section: [HTML, RSS, Markdown]
+
+outputFormats:
+  LLMS:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+  Markdown:
+    baseName: index.html
+
+privacy:
+  youtube:
+    privacyEnhanced: true
+
 #Modules inventory section
 module:
   hugoVersion:
@@ -35,21 +61,11 @@ module:
     - path: github.com/axivo/website/global
     - path: github.com/imfing/hextra
 
-#Build output
-publishDir: ../public/evocloud-website
-
-#outputFormats:
-outputs:
-  home: [HTML]
-  page: [HTML]
-  section: [HTML, RSS]
-
-# Parse Git commit. Needed to display the last modification date
-enableGitInfo: false
-
 #Parameters section
 params:
   description: Enterprise-grade platform for running and managing cloud-native applications on any IaaS.
+  images:
+    - images/evocloud-architecture.svg
   navbar:
     displayTitle: true
     displayLogo: true
@@ -72,7 +88,7 @@ params:
 
   page:
     # full (100%), wide (90rem), normal (1280px)
-    width: normal
+    width: full
 
   blog:
     list:
