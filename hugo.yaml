@@ -1,5 +1,6 @@
 baseURL: https://evocloud.dev/
 enableInlineShortcodes: true
+enableRobotsTXT: false
 defaultContentLanguage: en
 languages:
   en:
@@ -13,7 +14,17 @@ languages:
 
 #https://imfing.github.io/hextra/docs/guide/markdown/#configuration
 markup:
-  _merge: shallow
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
 
 #Modules inventory section
 module:
@@ -27,11 +38,18 @@ module:
 #Build output
 publishDir: ../public/evocloud-website
 
+#outputFormats:
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
 # Parse Git commit. Needed to display the last modification date
 enableGitInfo: false
 
 #Parameters section
 params:
+  description: Enterprise-grade platform for running and managing cloud-native applications on any IaaS.
   navbar:
     displayTitle: true
     displayLogo: true
@@ -41,11 +59,34 @@ params:
       link: /
       width: 40
       height: 20
+    width: wide
 
   theme:
     # light | dark | system
     default: system
     displayToggle: true
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2025"
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+    article:
+      displayPagination: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    width: normal
 
   editURL:
     enable: false
@@ -56,13 +97,6 @@ params:
       enable: true
       # hover | always
       display: always
-
-  displayUpdatedDate: true
-  dateFormat: "January 2, 2025"
-
-  page:
-    # full (100%), wide (90rem), normal (1280px)
-    width: normal
 
   search:
     enable: true
@@ -78,8 +112,13 @@ params:
   comments:
     enable: false
     type: giscus
+    # https://giscus.app/
+    giscus:
+      repo: evocloud-dev/evocloud-paas
+      repoId: R_kgDOJ8fJag
+      category: General
+      categoryId: DIC_kwDOJ9fJas4CY9gW
 
-  
 
 #Menubar section
 menu:
@@ -181,3 +220,6 @@ menu:
       url: "https://github.com"
       weight: 13
 
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
