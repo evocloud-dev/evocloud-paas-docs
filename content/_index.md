@@ -4,7 +4,7 @@ layout: hextra-home
 ---
 
 {{< hextra/hero-container
-  image="/images/logo-services.svg"
+  image="/images/evocloud-architecture.webp"
   imageLink="https://github.com/evocloud-dev/evocloud-paas"
   imageTitle="EvoCloud-PaaS Platform"
 >}}
@@ -25,7 +25,7 @@ layout: hextra-home
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-subtitle >}}
   EvoCloud aims to provide a platform as a product to streamline cloud-native application 
-  deployment and management in public or private cloud, intranet, edge and air-gapped environment.
+  deployment and management in public, private cloud, intranet, edge and air-gapped environment.
 {{< /hextra/hero-subtitle >}}
 </div>
 
