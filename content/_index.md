@@ -6,7 +6,8 @@ layout: hextra-home
 {{< hextra/hero-container
   image="/images/evocloud-architecture.webp"
   imageLink="https://github.com/evocloud-dev/evocloud-paas"
-  imageTitle="EvoCloud-PaaS Platform"
+  imageTitle="EvoCloud Platform"
+  imageWidth="780"
 >}}
 
 <!-- markdownlint-disable MD033 MD034-->

@@ -1,14 +1,14 @@
 ---
 cascade:
   type: docs #https://imfing.github.io/hextra/docs/guide/organize-files/#layouts
-#title: Kubernetes Security
-linkTitle: Kubernetes Security
+#title: CIS Benchmark
+linkTitle: CIS Benchmark
 breadcrumbs: true
-date: '2025-03-13T11:39:44-04:00'
+date: '2025-03-16T11:39:44-04:00'
 draft: true
 toc: false
 disableSidebar: false
-weight: 1
+weight: 2
 ---
 
 <!-- markdownlint-disable MD033 MD034-->
@@ -20,7 +20,7 @@ weight: 1
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  Kubernetes Security 
+  CIS Benchmark 
 {{< /hextra/hero-headline >}}
 </div>
 

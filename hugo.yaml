@@ -54,11 +54,12 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg
+      path: favicon.svg
+      dark: favicon.svg
+      #dark: images/logo-dark.svg
       link: /
-      width: 40
-      height: 20
+      width: 50
+      #height: 45
     width: wide
 
   theme:
@@ -67,7 +68,7 @@ params:
     displayToggle: true
 
   displayUpdatedDate: true
-  dateFormat: "January 2, 2025"
+  dateFormat: "January 2, 2006"
 
   page:
     # full (100%), wide (90rem), normal (1280px)
