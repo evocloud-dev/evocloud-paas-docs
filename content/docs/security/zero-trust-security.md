@@ -1,8 +1,8 @@
 ---
 cascade:
   type: docs #https://imfing.github.io/hextra/docs/guide/organize-files/#layouts
-#title: Secrets Management
-linkTitle: Secrets Management
+#title: Zero Trust Security
+linkTitle: Zero Trust Security
 breadcrumbs: true
 date: '2025-03-16T11:39:44-04:00'
 draft: true
@@ -20,20 +20,13 @@ weight: 2
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  Secrets Management
+  Zero Trust Security
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}
-  One of the biggest challenges with GitOps and Kubernetes manifests is handling secrets. 
-  Since GitOps relies on version-controlled manifests, storing sensitive data like API keys, 
-  database passwords, and authentication tokens securely becomes a problem.
+  Zero Trust security principle ensures that every request from a user or computer system
+  is verified, encrypted, and follows the principle of the least privilege access control.
 {{< /hextra/hero-subtitle >}}
 </div>
-
-### Recommended Solution
-The recommended solution is to use an external secret manager like HashiCorp Vault, SealedSecrets, or SOPS. 
-(Add section below to show how to configure secrets with HashiCorp Vault, SealedSecrets, or SOPS, and auto-inject them into a Kubernetes yaml manifests.)
-
-
