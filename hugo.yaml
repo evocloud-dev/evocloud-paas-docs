@@ -15,7 +15,8 @@ pagination:
   pagerSize: 21
 
 #Build output
-publishDir: ../public/evocloud-website
+#publishDir: ../public/evocloud-website
+publishDir: /usr/share/caddy
 
 # Parse Git commit. Needed to display the last modification date
 enableGitInfo: false
