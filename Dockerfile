@@ -1,5 +1,5 @@
 LABEL maintainer="maintainers@evocloud.dev"
-LABEL evocloud-paas-docs="0.1.0"
+LABEL evocloud-paas-docs="0.3.0"
 LABEL release-date="4/19/2025"
 
 # Stage 1: Build Environment
