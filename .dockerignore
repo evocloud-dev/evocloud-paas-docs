@@ -2,3 +2,5 @@ chart/
 .git
 .cache
 .gitignore
+Dockerfile
+*.md
