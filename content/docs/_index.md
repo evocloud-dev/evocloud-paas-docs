@@ -33,14 +33,12 @@ disableSidebar: false
 <!--more-->
 
 {{< cards >}}
-  {{< card link="organize-files" title="Organize Files" subtitle="Get ready to deploy and app in 5 minutes" icon="document-duplicate" >}}
-  {{< card link="configuration" title="Configuration" subtitle="Get ready to deploy and app in 5 minutes" icon="adjustments" >}}
-  {{< card link="markdown" title="Markdown" subtitle="Get ready to deploy and app in 5 minutes" icon="markdown" >}}
-  {{< card link="syntax-highlighting" title="Syntax Highlighting" subtitle="Get ready to deploy and app in 5 minutes" icon="sparkles" >}}
-  {{< card link="latex" title="LaTeX" subtitle="Get ready to deploy and app in 5 minutes" icon="variable" >}}
-  {{< card link="diagrams" title="Diagrams" subtitle="Get ready to deploy and app in 5 minutes" icon="chart-square-bar" >}}
-  {{< card link="shortcodes" title="Shortcodes" subtitle="Get ready to deploy and app in 5 minutes" icon="template" >}}
-  {{< card link="deploy-site" title="Deploy Site" subtitle="Get ready to deploy and app in 5 minutes" icon="server" >}}
+{{< card link="cheatsheets" title="Cheatsheets" subtitle="Quick references for common tasks and commands" icon="document-duplicate" >}}
+{{< card link="infrastructure" title="Infrastructure" subtitle="Guides and references for setting up the infrastructure" icon="server-stack" >}}
+{{< card link="installation" title="Installation" subtitle="Steps and guides for installing the software" icon="wrench-screwdriver" >}}
+{{< card link="integrations" title="Integrations" subtitle="Connect with third-party services and APIs" icon="rectangle-group" >}}
+{{< card link="releases" title="Releases" subtitle="Changelog and version history of the project" icon="github" >}}
+{{< card link="security" title="Security" subtitle="Practices, policies, and vulnerability reporting" icon="shield-check" >}}
 {{< /cards >}}
 
 <!--Reference to Tutorials-->
@@ -49,22 +47,22 @@ disableSidebar: false
 {{< /hextra/hero-subtitle >}}
 
 {{< hextra/feature-grid >}}
-  {{< hextra/feature-card
-    title="Find your framework"
-    subtitle="Deploy your favorite framework with our step by step guides."
-    link="../guides"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.15),hsla(0,0%,100%,0));"
+{{< hextra/feature-card
+  title="EvoCloud on GCP"
+  subtitle="Run EvoCloud seamlessly on Google Cloud Platform."
+  link="/tutorials"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.15),hsla(0,0%,100%,0));"
   >}}
-  {{< hextra/feature-card
-    title="Starter tutorials"
-    subtitle="Make a starter app and deploy it on Clever Cloud."
-    link="../guides/#starter-tutorials"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.15),hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
-    title="Add-ons guides"
-    subtitle="Take your dependencies management to the next level."
-    link="../guides/#level-up-your-add-ons"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(165, 16, 80, 0.15),hsla(0,0%,100%,0));"
-  >}}
+{{< hextra/feature-card
+  title="EvoCloud on OCI"
+  subtitle="Run EvoCloud seamlessly on Oracle Cloud Infrastructure."
+  link="/tutorials"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(0, 98, 163, 0.15),hsla(0,0%,100%,0));"
+>}}
+{{< hextra/feature-card
+  title="EvoCloud on AWS"
+  subtitle="Run EvoCloud seamlessly on Amazon Web Services."
+  link="/titorials"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(255, 153, 0, 0.15),hsla(0,0%,100%,0));"
+>}}
 {{< /hextra/feature-grid >}}
