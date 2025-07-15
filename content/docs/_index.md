@@ -33,12 +33,26 @@ disableSidebar: false
 <!--more-->
 
 {{< cards >}}
-{{< card link="cheatsheets" title="Cheatsheets" subtitle="Quick references for common tasks and commands" icon="document-duplicate" >}}
+{{< card link="cheatsheets" title="Getting Started" subtitle="Learn how to get your app up and running in just 5 minutes." icon="player-play" >}}
+{{< card link="cheatsheets" title="Develop" subtitle="Explore best practices for deploying to the cloud, scheduling jobs, and more." icon="github" >}}
+{{< card link="cheatsheets" title="Administrate" subtitle="Monitor logs and metrics, configure domains, and set up autoscaling." icon="admin" >}}
+{{< card link="cheatsheets" title="Deploy" subtitle="Step-by-step guide to deploying any application on Clever Cloud." icon="server-stack" >}}
+{{< card link="cheatsheets" title="Connect an add-on" subtitle="Link managed databases and configure cloud storage solutions." icon="plug-connected" >}}
+{{< card link="cheatsheets" title="Find help" subtitle="Need assistance? Discover ways to get support." icon="search" >}}
+{{< card link="cheatsheets" title="Marketplace" subtitle="Add your own service to the Clever Cloud marketplace." icon="marketplace" >}}
+{{< card link="cheatsheets" title="Clever Tools CLI" subtitle="Use the command line to deploy and manage apps and their dependencies." icon="terminal" >}}
+{{< card link="cheatsheets" title="CI/CD" subtitle="Set up automated deployments from GitHub or GitLab." icon="github" >}}
+{{< card link="cheatsheets" title="References" subtitle="Full list of environment variables, configuration options, and runtime details." icon="stack-3" >}}
+{{< card link="cheatsheets" title="User Account" subtitle="Manage your profile, team collaboration, and permissions." icon="user" >}}
+{{< card link="cheatsheets" title="Billing" subtitle="View invoices, track usage, and understand your costs." icon="currency-dollar" >}}
+{{< card link="cheatsheets" title="Contribute" subtitle="Learn how to contribute to this documentation." icon="user-group" >}}
+
+<!-- {{< card link="cheatsheets" title="Cheatsheets" subtitle="Quick references for common tasks and commands" icon="document-duplicate" >}}
 {{< card link="infrastructure" title="Infrastructure" subtitle="Guides and references for setting up the infrastructure" icon="server-stack" >}}
 {{< card link="installation" title="Installation" subtitle="Steps and guides for installing the software" icon="wrench-screwdriver" >}}
 {{< card link="integrations" title="Integrations" subtitle="Connect with third-party services and APIs" icon="rectangle-group" >}}
 {{< card link="releases" title="Releases" subtitle="Changelog and version history of the project" icon="github" >}}
-{{< card link="security" title="Security" subtitle="Practices, policies, and vulnerability reporting" icon="shield-check" >}}
+{{< card link="security" title="Security" subtitle="Practices, policies, and vulnerability reporting" icon="shield-check" >}} -->
 {{< /cards >}}
 
 <!--Reference to Tutorials-->
