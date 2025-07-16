@@ -14,7 +14,7 @@ weight: 3
 <!-- markdownlint-disable MD033 MD034-->
 {{< hextra/hero-badge link="https://github.com/evocloud-dev/evocloud-paas-docs">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  KubeVela Cheatsheets
+  KubeVela Cheatsheet
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
@@ -80,4 +80,28 @@ $ vela auth grant-privileges --group evocloud:dev-team
 $ vela auth grant-privileges --serviceaccount observer -n test --for-namespace test --readonly
 ````
 
+### Installing add-ons
+The ``vela addon`` command can be used to install and configure add-ons for the KubeVela Platform.
 
+> [!TIP]
+> KubeVela add-ons are all here: https://github.com/kubevela/catalog/tree/master/addons.
+
+````shell
+# This will install the velaux add-on
+vela addon enable velaux
+
+# This will uninstall the velaux add-on
+vela addon disable velaux
+
+# This will install velaux add-on and configure a LoadBalancer service type
+vela addon enable velaux serviceType=LoadBalancer
+
+# This will install velaux add-on and configure a NodePort service type
+vela addon enable velaux serviceType=NodePort
+
+#This will install velaux add-on and configure a DNS name entry for the domain
+vela addon enable velaux domain=example.domain.com
+
+#In addition to assigning a DNS name, If you want to enable the traefik addon, set the gatewayDriver parameter to use the Gateway API
+vela addon enable velaux domain=example.doamin.com gatewayDriver=traefik
+````
