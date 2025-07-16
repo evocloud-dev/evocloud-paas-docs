@@ -33,14 +33,26 @@ disableSidebar: false
 <!--more-->
 
 {{< cards >}}
-  {{< card link="organize-files" title="Organize Files" subtitle="Get ready to deploy and app in 5 minutes" icon="document-duplicate" >}}
-  {{< card link="configuration" title="Configuration" subtitle="Get ready to deploy and app in 5 minutes" icon="adjustments" >}}
-  {{< card link="markdown" title="Markdown" subtitle="Get ready to deploy and app in 5 minutes" icon="markdown" >}}
-  {{< card link="syntax-highlighting" title="Syntax Highlighting" subtitle="Get ready to deploy and app in 5 minutes" icon="sparkles" >}}
-  {{< card link="latex" title="LaTeX" subtitle="Get ready to deploy and app in 5 minutes" icon="variable" >}}
-  {{< card link="diagrams" title="Diagrams" subtitle="Get ready to deploy and app in 5 minutes" icon="chart-square-bar" >}}
-  {{< card link="shortcodes" title="Shortcodes" subtitle="Get ready to deploy and app in 5 minutes" icon="template" >}}
-  {{< card link="deploy-site" title="Deploy Site" subtitle="Get ready to deploy and app in 5 minutes" icon="server" >}}
+{{< card link="getting-started" title="Getting Started" subtitle="Learn how to get your app up and running in just 5 minutes." icon="player-play" >}}
+{{< card link="develop" title="Develop" subtitle="Explore best practices for deploying to the cloud, scheduling jobs, and more." icon="github" >}}
+{{< card link="Administrative" title="Administrate" subtitle="Monitor logs and metrics, configure domains, and set up autoscaling." icon="adjustments" >}}
+{{< card link="Deploy" title="Deploy" subtitle="Step-by-step guide to deploying any application on Clever Cloud." icon="server-stack" >}}
+{{< card link="add-ons" title="Connect an add-on" subtitle="Link managed databases and configure cloud storage solutions." icon="plug-connected" >}}
+{{< card link="find-help" title="Find help" subtitle="Need assistance? Discover ways to get support." icon="search" >}}
+{{< card link="marketplace-apis-tools" title="Marketplace" subtitle="Add your own service to the Clever Cloud marketplace." icon="marketplace" >}}
+{{< card link="clever-tools-cli" title="Clever Tools CLI" subtitle="Use the command line to deploy and manage apps and their dependencies." icon="terminal" >}}
+{{< card link="ci-cd" title="CI/CD" subtitle="Set up automated deployments from GitHub or GitLab." icon="github" >}}
+{{< card link="configuration-list" title="References" subtitle="Full list of environment variables, configuration options, and runtime details." icon="stack-3" >}}
+{{< card link="user-account" title="User Account" subtitle="Manage your profile, team collaboration, and permissions." icon="user" >}}
+{{< card link="billing" title="Billing" subtitle="View invoices, track usage, and understand your costs." icon="currency-dollar" >}}
+{{< card link="contribute" title="Contribute" subtitle="Learn how to contribute to this documentation." icon="user-group" >}}
+
+<!-- {{< card link="cheatsheets" title="Cheatsheets" subtitle="Quick references for common tasks and commands" icon="document-duplicate" >}}
+{{< card link="infrastructure" title="Infrastructure" subtitle="Guides and references for setting up the infrastructure" icon="server-stack" >}}
+{{< card link="installation" title="Installation" subtitle="Steps and guides for installing the software" icon="wrench-screwdriver" >}}
+{{< card link="integrations" title="Integrations" subtitle="Connect with third-party services and APIs" icon="rectangle-group" >}}
+{{< card link="releases" title="Releases" subtitle="Changelog and version history of the project" icon="github" >}}
+{{< card link="security" title="Security" subtitle="Practices, policies, and vulnerability reporting" icon="shield-check" >}} -->
 {{< /cards >}}
 
 <!--Reference to Tutorials-->
@@ -49,22 +61,22 @@ disableSidebar: false
 {{< /hextra/hero-subtitle >}}
 
 {{< hextra/feature-grid >}}
-  {{< hextra/feature-card
-    title="Find your framework"
-    subtitle="Deploy your favorite framework with our step by step guides."
-    link="../guides"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.15),hsla(0,0%,100%,0));"
+{{< hextra/feature-card
+  title="EvoCloud on GCP"
+  subtitle="Run EvoCloud seamlessly on Google Cloud Platform."
+  link="/tutorials"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.15),hsla(0,0%,100%,0));"
   >}}
-  {{< hextra/feature-card
-    title="Starter tutorials"
-    subtitle="Make a starter app and deploy it on Clever Cloud."
-    link="../guides/#starter-tutorials"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.15),hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
-    title="Add-ons guides"
-    subtitle="Take your dependencies management to the next level."
-    link="../guides/#level-up-your-add-ons"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(165, 16, 80, 0.15),hsla(0,0%,100%,0));"
-  >}}
+{{< hextra/feature-card
+  title="EvoCloud on OCI"
+  subtitle="Run EvoCloud seamlessly on Oracle Cloud Infrastructure."
+  link="/tutorials"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(0, 98, 163, 0.15),hsla(0,0%,100%,0));"
+>}}
+{{< hextra/feature-card
+  title="EvoCloud on AWS"
+  subtitle="Run EvoCloud seamlessly on Amazon Web Services."
+  link="/titorials"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(255, 153, 0, 0.15),hsla(0,0%,100%,0));"
+>}}
 {{< /hextra/feature-grid >}}

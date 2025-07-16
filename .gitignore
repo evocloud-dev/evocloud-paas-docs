@@ -2,6 +2,7 @@
 /public/
 /resources/_gen/
 /assets/jsconfig.json
+/usr
 hugo_stats.json
 
 # Executable may be added to repository
